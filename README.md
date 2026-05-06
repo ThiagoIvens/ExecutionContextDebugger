@@ -87,3 +87,4 @@ The generated file provides a full audit trail for external analysis:
 - Performance API (for high-resolution metrics)
 
 ---
+*Project developed for algorithmic study and software engineering excellence.*
