@@ -23,7 +23,7 @@ Debugging recursive functions is often a headache: the console gets flooded, and
 ### 1. Import the utility:
 
 ```javascript
-import { debug, printReport } from "./debugger.js";
+import { debug, saveReport } from "./debugger.js";
 ```
 
 ### 2. Implement within your recursive function (example in main.example.js):
@@ -44,7 +44,7 @@ function factorial(n) {
 }
 
 factorial(5);
-printReport(); // Generates summary and saves the JSON file
+saveReport(); // Generates summary and saves the JSON file
 ```
 
 ### 📊 Console Output Example

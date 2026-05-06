@@ -10,6 +10,7 @@ export function debug(sentido, ...args) {
 	const prefix = "  ".repeat(getLevelAcc());
 
 	if (sentido === "->") {
+		increasedLevelAcc();
 		inMoments.set(level, actualTime);
 		console.log(
 			`${prefix}-> Entering in level ${level} with args: `,
@@ -41,6 +42,7 @@ export function debug(sentido, ...args) {
 			stack: stackCleaned,
 		});
 		inMoments.delete(level);
+		decreasedLevelAcc();
 	}
 }
 
